@@ -1,0 +1,240 @@
+body{
+    background-color: #ebeced;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-family: 'Oranienbaum', serif;}
+
+a {text-decoration: none;}
+
+#grey-main{
+     display: inline-block;
+    /* margin-left: 300px;
+     padding-bottom: 30px;
+     padding-top: 0px;*/
+     width: 100%;
+     height: 100%;}
+
+#logo-ga{
+    display: inline-block;
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+    padding-top: 0px;
+    padding-left: 10px;
+    margin-bottom: 50px;
+}
+
+#logo-ga:hover {
+    transform: scale(1.1);
+}
+
+.titulo-about{
+    background-color: rgb(151, 179, 196);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;}
+
+.titulo-about-mas{
+        background-color: rgb(151, 179, 196);
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        cursor: pointer;}
+        
+.titulo-about-mas:hover {
+            transform: scale(1.1);
+        }
+        
+.menu-paginas{
+    display: inline-block;
+    padding-top: 0px;
+    /*padding-bottom: 30px;*/
+    padding-right: 0px;
+    padding-left: 300px;
+    margin-top: 0px;
+    margin-bottom: 0px;}
+
+.flex-container{
+    display: flex;}
+
+h1 {font-size: 25px;
+    color: #ca3f2e;
+    text-align: right;
+    display: inline-block;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    padding-left: 0px;}
+
+#menu-index {font-size: 25px;
+    color: #ca3f2e;
+    text-align: right;
+    display: inline-block;
+    padding-top: 0px;
+    /*padding-bottom: 30px;*/
+    padding-right: 0px;
+    padding-left: 550px;}
+
+
+ul li a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;}
+
+ol li{
+    line-height: 30px;}
+
+#foto-shonda{
+width: 500px;}
+
+#foto-elenco{
+    width: 500px;
+    padding-right: 800px;}
+
+.afiches{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    }
+
+
+li:hover {
+    transform: scale(1.1);
+}
+
+div{
+    display: inline-block;
+    padding-top: 10px;}
+
+.flex-elenco{
+display: flex;
+justify-content: space-evenly;}
+
+.flex-otrasSeries{
+display: flex;
+flex-direction: row;
+justify-content: center;}
+
+.descripcion-series{
+display: flex;
+margin-right: 0px;
+padding-left: 10px;
+padding-top: 0px;
+text-decoration: none;}   
+
+.flex-temporadas{
+background-color: rgb(151, 179, 196);
+padding: 10px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;}
+
+
+.flex-temporadas div{
+width: 100px;
+border: solid steelblue;
+padding: 5px;
+margin: 5px;
+justify-content: space-evenly;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+align-content: center;
+}   
+
+.flex-temporadas div:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* PRUEBA DE GRID DIRECTORA
+.shonda-directora{
+    padding: 5px;
+    display: grid;
+    padding: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}*/
+
+
+/*GRID PERSONAJES*/
+.grid-container{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.grid-container div{
+    padding: 10px;
+    padding-left: 10px;
+  }
+
+.elenco-ga{
+    display: flex;
+    justify-content: space-evenly;}  
+.nombres{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+#shonda
+{
+    width: 400px;}
+
+#shonda-elenco{
+    width: 400px;}
+
+.titulo-about{
+    background-color: rgb(151, 179, 196);
+    width: fit-content;
+    height: fit-content;}
+
+.personajes-principales{
+    background-color: rgb(151, 179, 196);
+    width: fit-content;
+    height: fit-content;}
+
+.temporada{
+    background-color: rgb(151, 179, 196);
+    width: fit-content;
+    height: fit-content;}
+
+.actores{
+    background-color: rgb(151, 179, 196);
+    width: fit-content;
+    height: fit-content;}
+
+#elenco{
+    margin-top: 60px;}
+
+footer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 150px;}
+
+
+/* MEDIA QUERIE 
+@media (max-width:768px) {
+    body {
+        grid-template-areas: 
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";}
+}*/
+
+@media (max-width:768px) {
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
